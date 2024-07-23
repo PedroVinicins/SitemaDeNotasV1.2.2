@@ -8,14 +8,14 @@ document.getElementById('salvarBtn').addEventListener('click', function() {
 
 function abrirHTML(pagina) {
     if (pagina === 'logo') {
-        window.open('#', '_blank');
+        window.open('http://localhost:3000/home/Erro.html', '_blank');
     }
 
     if (pagina === 'cadastra') {
-        window.open('#', '_blank');
+        window.open('http://localhost:3000/home/cadastra.html', '_blank');
     }
 
     if(pagina === 'PP'){
-        window.open('#','_blank');
+        window.open('http://localhost:3000/home/presença.html','_blank');
     }
 }

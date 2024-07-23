@@ -1,0 +1,16 @@
+{
+  "name": "sistema-escolar-v1.2.2",
+  "version": "1.0.0",
+  "description": "O Projeto de Notas e Presenças Escolares foi desenvolvido para ajudar a registrar e organizar as notas e a frequência dos aluno, proporcionando uma melhor organização e acompanhamento do desempenho escolar. https://sistemaescolarv2.netlify.app/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

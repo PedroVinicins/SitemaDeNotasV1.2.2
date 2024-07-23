@@ -1,0 +1,27 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "onWindowChange",
+
+    "editor.tabSize": 2,
+
+    "editor.insertSpaces": true,
+    "eslint.enable": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.json"
+    },
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/dist": true
+    },
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "debug.javascript.autoAttachSuggestions": "on",
+    "editor.wordWrap": "on",
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
+    "javascript.suggest.autoImports": true,
+    "javascript.suggest.completeFunctionCalls": true
+}

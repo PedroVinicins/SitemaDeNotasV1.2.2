@@ -1,0 +1,86 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/src/assets/styles/Midia.css">
+        <link rel="stylesheet" media="(max-width: 600px)" href="/src/assets/styles/MScree.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="/src/assets/scripts/Script.js"></script>
+        <script src="/src/main.js"></script>
+        <script src="/src/assets/scripts/Links.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento Escolares</title>
+</head>
+<body>
+    <header class="header">
+        <button onclick="abrirHTML('logo')" class="logo">Aluno</button>
+        
+        <nav class="navbar">
+            <button onclick="abrirHTML('PP')">idas a Escola <i class='bx bxs-school'></i></button>
+        </nav>
+    </header>
+
+    <div class="main-center">
+        <div id="dtPessoas">
+            <table id="tabelaMaterias">
+                <thead>
+                    <tr>
+                        <td>Matéria </td>
+                        <td>Trabalhos </td>
+                        <td>Prova </td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <button type="button" class="esconder" onclick="Mudarestado('minhaDiv')"><i class='bx bxs-right-arrow'></i></button>
+    
+    <div class="container" id="minhaDiv">
+        
+        <select id="materias" name="materias" class="selectm">
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="ciencias">Ciências</option>
+            <option value="historia">História</option>
+            <option value="Geografia">Geografia</option>
+            <option value="Física">Física</option>
+            <option value="Química">Química</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Biologia">Biologia</option>
+            <option value="Educação Física">Educação Física</option>
+            <option value="Artes">Artes</option>
+            <option value="Filosofia">Filosofia</option>
+            <option value="Sociologia">Sociologia</option>
+        </select>
+
+        <div id="dfPessoas">
+            <form name="fPessoas">
+              
+                <label for="trabalho">Trabalho</label>
+                <input type="text" class="inputfp" id="trabalho" name="trabalho" placeholder="Notas" maxlength="3" required>
+              
+                <label for="prova">Prova</label>
+                <input type="text" class="inputfp" id="prova" name="prova" placeholder="Nota" maxlength="3" required>
+
+                <input type="button" value="Salvar" id="input" class="btninput" onclick="cadPessoa()">
+                <input type="button" value="Limpa" id="input2" class="btnLimp"  onclick="limparTabela()">
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script>
+        //tirar a div e colocar
+        function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    </script>
+</body>
+</html>

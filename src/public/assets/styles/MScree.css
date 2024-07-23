@@ -1,0 +1,80 @@
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    table, td {
+        width: 400px;
+    }
+
+    .header {
+        display: flex;
+        margin: 0pc;
+        width: 29pc;
+    }
+
+    .logo{
+        font-size: 22px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(60, 104, 94);
+    }
+
+    .container {
+        position: relative;
+        top: 0;
+        left: -2px; /* Valor inicial fora da tela */
+        width: 295px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    @keyframes slideIn {
+        to {
+            left: 0;
+        }
+    }
+
+    .selectm {
+        display: flex;
+        width: 100%;
+    }
+
+    .btnLimp .btninput {
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    label {
+        display: block;
+    }
+
+    .inputfp {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .esconder{
+        display: flex;
+        width: 2pc;
+        height: 20px;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 100;
+    }
+}

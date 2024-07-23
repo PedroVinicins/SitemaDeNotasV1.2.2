@@ -3,13 +3,11 @@
     "files.autoSave": "onWindowChange",
 
     "editor.tabSize": 2,
-
     "editor.insertSpaces": true,
     "eslint.enable": true,
     "eslint.options": {
         "configFile": ".eslintrc.json"
     },
-
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,

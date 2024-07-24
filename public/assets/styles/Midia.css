@@ -8,7 +8,7 @@
 }
 
 
-body{font-family: "Roboto", sans-serif; font-weight: 100; font-style: normal; width: 100%;}
+body{font-family: "Roboto", sans-serif; font-weight: 100; font-style: normal; width: 100%; background-color: transparent;}
 
 
 .inputfp{
@@ -34,23 +34,27 @@ caption{
 }
 
 table{
-    background-color: #dddddd;
+    background-color: transparent;
     width:  30pc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight:bold;
+}
+
+tbody td:nth-child(1),tfoot, td:nth-child(1) {
+    background-color: #dddddd;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+tbody td:nth-child(2),tfoot, td:nth-child(2) {
+    background-color: #ccc  ;
     border-radius: 5px;
 }
 
 tbody td:nth-child(3),tfoot, td:nth-child(3) {
-    background-color: #f2f2f2;
-}
-
-tbody td:nth-child(2),tfoot, td:nth-child(2) {
-    background-color: #f2f2f2;
-}
-
-tr:nth-child(1),table, tr:nth-child(2){
-    text-align: center;
-    font-weight:bold;
-    border: solid 1px #f2f2f2;
+    background-color: #ccc;
+    border-radius: 5px;
 }
 
 label{font-size: large;}
@@ -92,7 +96,7 @@ label{font-size: large;}
     padding: 20px;
     margin: 65px;
     border-radius: 10px;
-    background: #f2f2f2;
+    background: #dddddd;
     transition: all 0.3s ease;
 }
 

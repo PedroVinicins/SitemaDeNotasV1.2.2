@@ -113,21 +113,49 @@ a{color: rgb(0, 0, 0); text-decoration: none;}
             <button type="submit" id="submit">Login</button>
         </form>
     </div>
-
     <button type="button" onclick="abriHTML('Notas')" class="usuario-test">usuario-test</button>
-    <script src="/public/assets/scripts/Links.js"></script>
+
+
+
     <script>
-
+        
         function abriHTML(Abrir){
-
+            
             if (Abrir === 'cadastra') {
-            window.open('http://localhost:3000/home/cadastro.html', '_blank');
-        }
-
-        if (Abrir === 'Notas'){
-            window.open('http://localhost:3000/home/Notas.html', '_blank')
-        }
-        }
+                window.open('/public/cadastro/public/cadastro.html', '_self');
+            }
+            
+            if (Abrir === 'Notas'){
+            window.open('/public/home/Notas.html', '_self');
+        };
+    }
     </script>
+<script src="/public/assets/scripts/Links.js"></script>
+<script>document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const login = document.getElementById('login').value;
+    const senha = document.getElementById('senha').value;
+
+    //local >>
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ login, senha }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = '/public/home/Notas.html';
+        } else {
+            alert('Errado, Por favor, tente novamente.');
+        }
+    })
+    .catch((error) => {
+        console.error('Erro:', error);
+    });
+});</script>
 </body>
 </html>

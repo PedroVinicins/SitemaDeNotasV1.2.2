@@ -1,1 +1,10 @@
 
+.package-lock.json
+
+.settings.json
+
+.netlify.toml
+
+.server.js
+
+.node_modules
